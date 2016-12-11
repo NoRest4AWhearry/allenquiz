@@ -1,0 +1,59 @@
+body, html {margin: 0;}
+body {
+    background-image: url("bkgnd.JPG");
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
+}
+#app {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Calibri, serif;
+}
+/* form style */
+form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 10px 30px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px #999;
+}
+
+.btn:hover {background-color: #3e8e41}
+
+.btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 2px #666;
+    transform: translateY(1px);
+}
+
+
+/* Answer Table */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(179, 179, 179, 0.7);
+}
+tr:nth-child(odd) {
+    background-color: rgba(255,255,255,0.7);
+}
