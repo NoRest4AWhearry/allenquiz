@@ -37,7 +37,7 @@ function loadQuestionsToDOM(questionArray) {
   // create next button function
   var onNext = function () {
     getUserSelectedAnswer(questionArray[index]);
-    var containers = document.querySelectorAll('container');
+    var containers = document.querySelectorAll('.container');
     for ( var i = 0; i < containers.length; i++) {
       containers[i].parentElement.removeChild(containers[i]);
     }
