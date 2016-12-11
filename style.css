@@ -32,8 +32,8 @@ form #choices {
 form label {
     cursor: pointer;
     position: relative;
-    padding-left: 60px;
-    font-size: 40px;
+    padding-left: 35px;
+    font-size: 25px;
 }
 input[type=radio] {
     display: none;
@@ -41,12 +41,13 @@ input[type=radio] {
 label:before {
     content: "";
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 
     margin-right: 50px;
     position: absolute;
     left: 0;
+    bottom: 1px;
     background-color: #31abde;
     border-radius: 50%;
 }
@@ -56,9 +57,9 @@ label:before {
 input[type=radio]:checked + label:before {
     content: "\272A";
     color: #ffffff;
-    font-size: 50px;
+    font-size: 25px;
     text-align: center;
-    line-height: 50px;
+    line-height: 32px;
 }
 .btn {
     padding: 10px 30px;
