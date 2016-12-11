@@ -9,21 +9,24 @@ function addQuestion(question) {
   var questChoices = question.choices;
   for (var i = 0; i<questChoices.length; i++) {
     document.querySelector('#theQuestion').innerHTML = question.quest;
-    createInput(questChoices[i]);
+    createInput(questChoices[i],i);
   }
 }
 
 // create input tag for question choices
-function createInput(val) {
+function createInput(val, num) {
   var div = document.createElement('div');
   div.className = 'container';
   var label = document.createElement('label');
+  label.setAttribute('for', 'radio-'+num);
   var span = document.createElement('span');
   var input = document.createElement('input');
+  input.id = 'radio-'+num;
   input.setAttribute('name', 'choices');
   input.type = 'radio';
   input.value = val;
   span.innerHTML = val;
+  span.className = 'radio';
   label.appendChild(span);
   div.appendChild(input);
   div.appendChild(label);

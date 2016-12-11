@@ -15,7 +15,51 @@ form {
     width: 100%;
     margin: 0 auto;
 }
+form .container {
+    padding: 15px;
+    border: 2px solid #999999;
+    color: #000;
+}
+form .container:nth-child(even) {
+    background-color: rgba(179, 179, 179, 0.7);
+}
+form .container:nth-child(odd) {
+    background-color: rgba(255,255,255,0.7);
+}
+form #choices {
+    margin: 15px;
+}
+form label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 60px;
+    font-size: 40px;
+}
+input[type=radio] {
+    display: none;
+}
+label:before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
 
+    margin-right: 50px;
+    position: absolute;
+    left: 0;
+    background-color: #31abde;
+    border-radius: 50%;
+}
+.radio label:before {
+    border-radius: 50%;
+}
+input[type=radio]:checked + label:before {
+    content: "\272A";
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;
+}
 .btn {
     padding: 10px 30px;
     font-size: 16px;
@@ -27,6 +71,7 @@ form {
     border: none;
     border-radius: 10px;
     box-shadow: 0 3px #999;
+    float: right;
 }
 
 .btn:hover {background-color: #3e8e41}
